@@ -69,7 +69,8 @@ export interface YouTubePlaylist {
   };
 }
 
-const YOUTUBE_API_KEY = "AIzaSyAmFfNvI69d6JNkZEvi1TgGDmbtSYH4_YE";
+const YOUTUBE_API_KEY = process.env.NEXT_PUBLIC_YOUTUBE_API_KEY
+
 const BASE_URL = process.env.YOUTUBE_API_BASE_URL || 'https://www.googleapis.com/youtube/v3';
 
 // Helper function to format large numbers
